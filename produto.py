@@ -16,3 +16,10 @@ class Produto:
             self.estoque -= quantidade
             return True
         return False
+    
+    def aplicar_desconto(self, percentual: float, limite: float = 50):
+        if percentual < 0:
+            return
+        if percentual > limite:
+            percentual = limite
+        self.preco += (1 - percentual / 100)
