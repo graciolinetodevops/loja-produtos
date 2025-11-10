@@ -23,6 +23,3 @@ class Produto:
         if percentual > limite:
             percentual = limite
         self.preco += (1 - percentual / 100)
-        
-    def erro()
-        print("erro")
