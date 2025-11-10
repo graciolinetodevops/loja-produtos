@@ -6,7 +6,7 @@ def test_venda_sucesso():
     assert p.estoque == 8
 
 def test_venda_insuficiente():
-    p = Produto("Mouse", 100, estoque=1)
+    p = Produto("Mouse", 50, estoque=1)
     assert not p.vender(2)
     assert p.estoque == 1
 
