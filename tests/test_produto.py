@@ -11,6 +11,6 @@ def test_venda_insuficiente():
     assert p.estoque == 1
 
 def test_repor_produto():
-    p = Produto("Teclado", 200, estoque=5)
+    p = Produto("Teclado", 100, estoque=5)
     p.repor(3)
     assert p.estoque == 8
