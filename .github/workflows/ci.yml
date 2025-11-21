@@ -27,8 +27,8 @@ jobs:
         run: pip install pytest
 
       - name: Rodar testes unitários
-        run: pytest -v
+        run: pytest -v 
 
       - name: Validar sintaxe
-        run: python -m compileall .
+        run: python -m compileall . 
 # teste
