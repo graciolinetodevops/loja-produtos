@@ -31,3 +31,4 @@ jobs:
 
       - name: Validar sintaxe
         run: python -m compileall .
+# teste
